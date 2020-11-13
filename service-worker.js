@@ -7,7 +7,7 @@ const CACHE_NAME = 'static-cache-v-DR';
 const FILES_TO_CACHE = [
   '/offline.html',
   '/index.html',
-  'game.css',
+  '/game.css',
   '/files/main.js',
   '/files/Boss.js',
   '/files/Game.js',
