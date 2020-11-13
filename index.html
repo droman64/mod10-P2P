@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="files/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un juego de disparos">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="apple-mobile-web-app-title" content="Una app de disparos">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="files/icons/screenshot128.png">
+<title>Shooter Game</title>
+  <link type="text/css" rel="stylesheet" href="game.css">
+  <script src="files/Game.js" type="text/javascript"></script>
+  <script src="files/Entity.js" type="text/javascript"></script>
+  <script src="files/Character.js" type="text/javascript"></script>
+  <script src="files/Player.js" type="text/javascript"></script>
+  <script src="files/Opponent.js" type="text/javascript"></script>
+  <script src="files/Boss.js" type="text/javascript"></script>
+  <script src="files/Shot.js" type="text/javascript"></script>
+  <script src="files/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <button id="pause" class="gamebutton" onclick="this.blur();">Pausa</button>
+  <button id="reset" class="gamebutton" onclick="this.blur();">NUEVA PARTIDA</button>
+</body>
+
+<ul>
+  <li id="scoreli">score:</li>
+  <li id="livesli">lives:</li>
+</ul>
+
+<script> //scrip para añadir service worker a la PWA
+  console.log("agregando service worker");
+      if('serviceWorker' in navigator){
+          window.addEventListener("load",()=>{
+              navigator.serviceWorker.register('service-worker.js').then((reg)=>{
+                  console.log("Service worker registrado", reg)
+              })
+          })
+      }
+
+  </script> 
+  <script src="files/install.js"></script> 
+
+</html>
