@@ -1,0 +1,21 @@
+{
+    "name": "Juego Shot",
+    "short_name": "Shot",
+    "icons":[
+        { "src":"icons/screenshot128.png",
+            "sizes": "128x128",
+            "type": "image/png" },
+        { "src":"icons/screenshot256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        { "src":"icons/screenshot512.png",
+            "sizes": "512x512",
+            "type": "image/png" }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#afafaf",
+    "theme_color": "#fafafa"
+}
